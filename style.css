@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+button {
+    cursor: pointer;
+}
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+.taskContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #ffe4d6, #fdd2c6, #fac0bb, #f5adb5, #ec9cb4, #e192a8, #d6889c, #cb7e90, #b87a79, #a37669, #8c7160, #776b5d);
+    color: #fff;
+
+}
+.taskList__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.taskList__wrap h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.taskAdd {
+    display: flex;
+}
+#task {
+    flex: 1 1 0%;
+    background-color: #503C3C;
+    padding: 1rem;
+    
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 25px;
+    max-width: 550px;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+#task::placeholder{
+    color: #f5adb5;
+}
+#btn {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #503C3C;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: 200px;
+}
+#btn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    color: #f5adb5;
+    cursor: pointer;
+}
+.taskList {
+    background-color: hsl(23, 19%, 46%, 0.3);
+    padding: 2rem 1rem;
+}
+.line {
+    width: 125px;
+    border: 1px solid;
+    opacity: 0.3;
+}
+.taskList h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+.taskList-text{
+
+    margin-bottom: 1rem;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+.edit {
+    color: #d6889c;
+    font-size: 18px;
+    background-color: #503C3C;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: 100px;
+}
+.delete {
+    color: red;
+    font-size: 18px;
+    background-color: #503C3C;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: 100px;
+}
+.newTaskContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.taskItem.completed {
+    text-decoration: line-through #6a6666;
+    color: #fff;
+}
+.taskItem {
+    color: #fff;
+    font-size: 18px;
+    background-color: #b87a79;
+    border-radius: 1rem;
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    appearance: none;
+    border: none;
+}
+.checkTask {
+    width: 30px;
+
+}
